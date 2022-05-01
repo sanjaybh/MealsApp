@@ -9,6 +9,13 @@
     "web": "expo start --web",
     "eject": "expo eject"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanjaybh/MealsApp.git"
+  },
+  "keywords": ["React native"],
+  "author": "Sanjay Bhan",
+  "license": "ISC",
   "dependencies": {
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.2",
