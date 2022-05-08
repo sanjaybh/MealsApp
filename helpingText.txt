@@ -1,0 +1,14 @@
+
+Bug need to be resolved to restrict below package to below version
+npm install react-native-reanimated@1 --save --save-exact
+
+bug resolved in below version
+"react-native-reanimated": "2.6.0",
+
+expo doctor --fix-dependencies
+
+npm cache clean --force
+
+
+plugins: ['react-native-reanimated/plugin'],
+npm run start --reset-cache 
