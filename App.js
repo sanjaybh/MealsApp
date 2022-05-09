@@ -19,16 +19,26 @@ function DrawerNavigator(){
     <Drawer.Navigator
       useLegacyImplementation    
       screenOptions={{
-      headerStyle: { backgroundColor: '#351401' },
-      headerTintColor: 'white',
-      //sceneContainerStyle: { backgroundColor: '#3f2f25' }
-    }}
-      >
+        headerStyle: { backgroundColor: '#76bc0e' },
+        headerTintColor: '#fff',
+        //sceneContainerStyle: { backgroundColor: '#87b247' },
+        drawerContentStyle:{ backgroundColor: '#caddd2' },
+        drawerInactiveTintColor:'#3d3ae6',
+        drawerActiveTintColor: '#0e0d0d',
+        drawerActiveBackgroundColor:'#85e843' ,    
+      }}
+    >
       <Drawer.Screen name="Categories" component={CategoriesScreen} options={{
-        title:'All Categories'
+        title:'All Categories',
+        sceneContainerStyle: { 
+          backgroundColor: '#cdece2'
+        },
       }} />
       <Drawer.Screen name="Favorites" component={FavoritesScreen} options={{
-        title:'Favorites'
+        title:'Favorites',
+        sceneContainerStyle: { 
+          backgroundColor: '#cdece2'
+        },
       }} />
     </Drawer.Navigator>
   )
@@ -42,10 +52,10 @@ export default function App() {
         <Stack.Navigator 
           initialRouteName="CategoriesScreen"
           screenOptions={{
-            headerStyle: { backgroundColor: '#351401' },
+            headerStyle: { backgroundColor: '#76bc0e' },
             headerTintColor: 'white',
             contentStyle: { 
-              backgroundColor: '#3f2f25'
+              backgroundColor: '#695345'
             },
           }}
         >
@@ -58,10 +68,7 @@ export default function App() {
           />
           <Stack.Screen 
             name="MealsOverview" 
-            component={MealsOverviewScreen} 
-            options={{
-              title:'All About Meal'             
-            }} 
+            component={MealsOverviewScreen}
           />
           <Stack.Screen 
             name="MealDetailsScreen" 
