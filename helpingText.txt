@@ -1,3 +1,5 @@
+academind
+https://github.com/academind/react-native-practical-guide-code
 
 Bug need to be resolved to restrict below package to below version
 npm install react-native-reanimated@1 --save --save-exact
